@@ -20,8 +20,11 @@ body{
     /*grid-template-rows: 1fr 2fr 4fr 3fr 2fr;*/
     gap: 10px 10px;
     max-width: 1440px;
-    margin: auto;
+/*pb marge grille*/
+    margin-left: 20px;
+    /*margin: auto;*/
     width: 100%;
+ 
     }
 
 
@@ -171,9 +174,12 @@ margin-bottom: 20px;
     border: 2px solid #F2F2F2;
     border-radius: 25px;
     font-size: 10px;
-
 }
-
+.optionfiltres:hover{
+    background-color: #0065FC;
+    color: white;
+    
+}
 .optionfiltres i{
     /*Pensez à enlever le border après mise en forme*/
     /*border: 2px solid #0065FC;*/
@@ -213,7 +219,6 @@ margin-bottom: 20px;
 
 /*II. Section 2*/
 #section2{
-    display: grid;
     grid-row-start: 3;
     grid-column-start: 2;
     grid-column: span 2;
@@ -240,9 +245,15 @@ margin-bottom: 20px;
     background-color: white;
     max-height: 200px;
     width: 250px;
-    margin-bottom: 20px;
+    margin: 15px;
     padding: 3px;
     border-radius: 15px;
+    color: black; 
+
+}
+
+.lienherbergement{
+    text-decoration: none;
 }
 
 .hebergement img{
@@ -299,8 +310,7 @@ margin-bottom: 20px;
     flex-direction: column;
     width: auto;
     margin-left: 20px;
-    margin-right: 20px;
-}
+ }
 
 .populaires{
     background-color: white;
@@ -308,7 +318,13 @@ margin-bottom: 20px;
     padding: 3px;
     margin-bottom: 20px;
     border-radius: 10px;
+    max-height: 120px;
+    min-width: 200px;
+    color: black;
+}
 
+.pop{
+    text-decoration: none;
 }
 .populaires img{ 
     height: 120px;
@@ -347,13 +363,15 @@ max-width: 1440px;
 /*voir pour mettre max-*height*/
 height: auto;
 border: 3px solid black;
-/*padding: 0;*/
+}
+
+.activités{
+    text-decoration: none;
+    color: black;
 }
 
 #figure1{
-display: grid;
 grid-column-start: 1;
-/*grid-row-start: 1;*/
 grid-row-end: span 6;
 }
 
@@ -386,7 +404,7 @@ grid-row-end: span 6;
     }
 
 
-figure{
+#section4 figure{
 width: auto;
 height: auto;
 border: 3px solid #0065FC;
@@ -398,7 +416,7 @@ margin: 10px;
 figcaption{
     padding-top: 10px;
     padding-left: 10px;
-    width: 100%;
+    width: auto;
     height: 30px;
     border: 3px solid palevioletred;
 }
@@ -413,7 +431,6 @@ figcaption{
 
 }
 
-*/
 /*Footer*/
 footer{
     display: grid;
