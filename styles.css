@@ -1,12 +1,7 @@
 /*@fontface*/
-/**{
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-areas: 
-        "header header"
-        "Body sidebar"
-        "Footer Footer";
-}*/
+
+
+
 body{
     margin: 0;
     color: black;
@@ -16,8 +11,8 @@ body{
 
 .containergrid{
     display: grid;
-    grid-template-columns: 1em 2fr 1fr 1em;
-    /*grid-template-rows: 1fr 2fr 4fr 3fr 2fr;*/
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(4 auto)
     gap: 10px 10px;
     max-width: 1440px;
 /*pb marge grille*/
@@ -32,11 +27,11 @@ body{
 header{
     display: grid;
     grid-row-start: 1;
-    grid-column-start: 2;
-    grid-column: span 4;
+    grid-column-start: 1;
+    grid-column: span 3;
 }
 
-#conteneurheader{
+#containerheader{
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -109,7 +104,7 @@ h3{
 #section1{
     display: grid;
     grid-row-start: 2;
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-column: span 3;
 }
 
@@ -220,7 +215,7 @@ margin-bottom: 20px;
 /*II. Section 2*/
 #section2{
     grid-row-start: 3;
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-column: span 2;
 }
 
@@ -342,7 +337,7 @@ margin-bottom: 20px;
 #section4{
     grid-row-start: 4;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column: span 3;
     font-weight: bolder;
     border: 3px solid orange;
 }
@@ -357,10 +352,10 @@ margin-bottom: 20px;
 #galleryactivites{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(auto-fill, 300px);
+    grid-template-rows: repeat(6, 1fr);
     max-width: 1440px;
     /*voir pour mettre max-*height*/
-    height: auto;
+    /*height: auto;*/
     border: 3px solid black;
 }
 
@@ -374,7 +369,8 @@ margin-bottom: 20px;
 .activités:nth-child(1){
     grid-column-start: 1;
     grid-row-start: 1;
-    grid-row-end: 6;
+    grid-row: span 6;
+    background-color: #0065FC;
 }
 
 .activités:nth-child(2){
@@ -391,18 +387,21 @@ margin-bottom: 20px;
     grid-column-start: 3;
     grid-row-start: 1;
     grid-row-end: 7;
+    background-color: #0065FC;
 }
 
 .activités:nth-child(5){
     grid-column-start: 4;
     grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-end: 4;
+    background-color: brown;
 }
 
 .activités:nth-child(6){
     grid-column-start: 4;
     grid-row-start: 4;
     grid-row-end: 7;
+    background-color: blueviolet;
 }
 
 #section4 figure{
@@ -465,3 +464,61 @@ footer{
     margin-left: 0px;
     padding-bottom: 0.7em;
 }
+
+/*Break point tablette*/
+
+/*Breakpooint smartphone*/
+
+@media screen and (max-width: 480px){
+
+ 
+    .containergrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        /*gap: 10px 10px;
+    pb marge grille
+        margin-left: 20px;*/
+        /*margin: auto;*/
+        color: orange;  
+    }
+
+    #containerheader{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap
+        width: 100%;
+        height: auto;
+        /*align-items: center;*/
+        border-radius: 3px solid orange;
+    }
+
+    header{
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+    #section1{
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+    #section2{
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+
+    #section3{
+        grid-column-start: 1;
+        grid-row-start: 4;
+    }
+
+    #section4{
+        grid-column-start: 1;
+        grid-row-start: 5;   
+    }
+
+
+
+}
+
