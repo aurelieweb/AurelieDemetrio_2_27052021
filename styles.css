@@ -12,7 +12,7 @@ body{
 .containergrid{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(4 auto)
+    grid-template-rows: repeat(4 auto);
     max-width: 1440px;
 /*pb marge grille*/
     margin-left: 20px;
@@ -102,7 +102,12 @@ h3{
     padding-left: 10px;
 }
 
+article{
+    box-shadow: 0px 5px 10px #909090 /*rgba(242, 242, 242, .4) ;*/
+}
+
 /*Section 1*/
+
 #section1{
     display: grid;
     grid-row-start: 2;
@@ -139,12 +144,27 @@ margin-bottom: 20px;
 #recherche input{
     width: 13em;
     border-top: 1px solid #F2F2F2;
-    border-bottom: 1px solid #F2F2F2;
+    border-bottom: 1px solid #f2f2f2;
     border-left: 0;
     border-right: 0;
 }
 
 .recherche{
+    display: flex;
+    border: 0;
+    background-color: #0065FC;
+    color: #F2F2F2;
+    font-weight: bolder;
+    border-radius: 0px 8px 8px 0px;
+    padding-right: 1em;
+    padding-left: 1em;
+    width: auto;
+    align-items: center;
+}
+
+/*Voir si quelque chose de plus propre*/
+.loupe{
+    display: none;
     border: 0;
     background-color: #0065FC;
     color: #F2F2F2;
@@ -155,11 +175,16 @@ margin-bottom: 20px;
     width: auto;
 }
 /*Conteneur Filtres options*/
-#filtres{
+/*#filtres{
+    
+}*/
+
+.containerfiltres{
     display: inline-flex;
     min-width: 60%;
     margin-bottom: 1em;
 }
+
 /*Bouton filtres*/
 .optionfiltres{
     display: flex;
@@ -241,7 +266,7 @@ margin-bottom: 20px;
     flex-direction: column;
     background-color: white;
     max-height: 200px;
-    width: 250px;
+    width: auto;
     margin: 15px;
     padding: 3px 3px 20px 3px;
     border-radius: 15px;
@@ -254,7 +279,7 @@ margin-bottom: 20px;
 
 .hebergement img{
     height: 100px;
-    width: 100%;
+    width: 240px;
     border-radius: 15px 15px 0px 0px;
     object-fit: cover;
 }
@@ -329,6 +354,7 @@ margin-bottom: 20px;
     /*max-height: 120px;*/
     /*width: auto;*/
     min-width: 200px;
+    max-width: 300px;
     color: black;
 }
 
@@ -385,6 +411,7 @@ margin-bottom: 20px;
     height: auto;
     border-radius: 15px;
     margin: 10px;
+    max-width: 300px;
     }
 
 .lienactivités{
@@ -485,55 +512,202 @@ footer{
 
 /*Breakpooint smartphone*/
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 380px){
 
  
     .containergrid{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, auto);
+        grid-template-rows: repeat(5, auto);
+        max-width: 37s0px;
+        width: auto;
+        border: 2px solid blue;
+        margin: 0;
         /*gap: 10px 10px;
-    pb marge grille
+        pb marge grille
         margin-left: 20px;*/
         /*margin: auto;*/ 
     }
 
+    section{
+        /*max-width: 380px;*/
+        width: 370px;
+    }
+
+    article{
+    border: 2px solid greenyellow;
+}
+
+/*HEADER*/
+
     #containerheader{
-        display: flex;
+        /*display: flex;*/
         flex-direction: column;
-        flex-wrap: wrap
-        width: 100%;
+        /*flex-wrap: wrap;*/
+        width: 370px;
         height: auto;
-        /*align-items: center;*/
-        border-radius: 3px solid orange;
+        align-items: inherit;
+        border: 3px solid orange;
     }
 
     header{
         grid-column-start: 1;
         grid-row-start: 1;
+        border: 2px solid palevioletreds;
     }
 
+    #inscrire{
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    nav{
+        width: 380px;
+        margin: 0%;
+    }
+
+    nav ul{
+        width: auto;
+        padding: 0px;
+        border: 2px solid chartreuse;
+    }
+
+    nav ul li:hover{
+        border-top: none;
+    }
+
+    nav ul li:nth-child(-n+2){
+        width: 190px;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    nav ul li:nth-child(-n+2):hover{
+        border-bottom: 3px solid #0065FC;
+    }
+
+/* I. SECTION 1*/
     #section1{
         grid-column-start: 1;
         grid-row-start: 2;
+        border: 2px solid purple;
+    }
+        
+    #conteneursection1{
+        width: auto;
+        }
+        
+    #filtres{
+        display: flex;
+        flex-direction: column;
     }
 
-    #section2{
-        grid-column-start: 1;
-        grid-row-start: 3;
+    .containerfiltres{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: 3px solid purple;
     }
+
+
+    .optionfiltres{
+        width: auto;
+        padding-right: 20px;
+    }
+
+    .optionfiltres p{
+        padding-left: 20px;
+    }
+
+    input{
+        flex-grow: 1;
+    }
+
+    .loupe{
+        display: flex;
+    }
+
+    .recherche{
+        display: none;
+    }
+
+    /*II. SECTION 2*/
+
+    #section2{
+        width: auto;
+        grid-column-start: 1;
+        grid-row-start: 4;
+        border: 2px solid purple;
+    }
+
+    #conteneursection2{
+        width: 100%;
+    }
+
+    .hebergement img{
+        width: 300px;
+        height: 100px;
+    }
+
+    /*III. SECTION 3*/
 
     #section3{
         grid-column-start: 1;
-        grid-row-start: 4;
+        grid-row-start: 3;
+        border: 2px solid purple;
     }
+
+    #conteneursection3{
+        width: fit-content;
+    }
+
+    #resultatpopulaires{
+        margin: auto;
+    }
+
+    /*IV. SECTION 4*/
 
     #section4{
         grid-column-start: 1;
-        grid-row-start: 5;   
+        grid-row-start: 5;
+        border: 2px solid purple;   
+    }
+
+    #conteneursection4{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .galleryactivites{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .activités img{
+        height: 100px;
+        width: 300px;
     }
 
 
+    /*.activités img{
+        max-width: 300px;
+        height: auto;
+    }*/
+
+    #conteneurfooter{
+        display: flex;
+        flex-direction: column;
+        background-color: #F2F2F2;
+    }
+
+    .elementfooter{
+        width: auto;
+    }
 
 }
 
