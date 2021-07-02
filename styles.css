@@ -1,7 +1,3 @@
-/*@fontface*/
-
-
-
 body{
     margin: 0;
     color: black;
@@ -14,13 +10,10 @@ body{
     grid-template-columns: 65% 1fr;
     grid-template-rows: repeat(4 auto);
     max-width: 1440px;
-/*pb marge grille*/
     margin: auto;
     width: auto;
     gap: 40px;
-    
-    }
-
+}
 
 /*Header*/
 header{
@@ -55,7 +48,6 @@ nav ul{
     list-style-type: none;
     height: 4em;
     width: 100%;
-    /*align-items: flex-end;*/
 }
 
 nav ul li{
@@ -86,7 +78,6 @@ nav ul li a{
 
 h1{
     font-size: 24px;
-    /*padding-left: 15px;*/
     margin: 0px;
 }
 
@@ -143,7 +134,6 @@ margin-bottom: 35px;
 #bordurerecherche{
     background-color: #F2F2F2;
     border-radius: 15px 0px 0px 15px;
-   /* border: 3px solid #0065FC;*/
     width: 3em;
     height: auto;
     display: flex;
@@ -194,7 +184,6 @@ margin-bottom: 35px;
    align-items: center;
    height: 50px;
    margin-bottom: 30px;
-
 }
 
 .containerfiltres{
@@ -211,13 +200,13 @@ margin-bottom: 35px;
     border: 2px solid #F2F2F2;
     border-radius: 30px;
     font-size: 20px;
-
 }
+
 .optionfiltres:hover{
     background-color: #0065FC;
     color: white;
-
 }
+
 .optionfiltres i{
     /*Pensez à enlever le border après mise en forme*/
     /*border: 2px solid #0065FC;*/
@@ -240,8 +229,8 @@ margin-bottom: 35px;
     padding: 0px 20px 0px 15px;
     margin: 0px;
 }
-/*Logo info*/
 
+/*Logo info*/
 #info{
     display: flex;
     height: 2em;
@@ -256,6 +245,7 @@ margin-bottom: 35px;
     margin-right: 10px;
     border-radius: 50%;
 }
+
 #bordureinfo i{
     display: flex;
     justify-content: center;
@@ -268,7 +258,6 @@ margin-bottom: 35px;
 #section2{
     grid-row-start: 3;
     grid-column-start: 1;
-    /*grid-column: span 2;*/
 }
 
 #conteneursection2{
@@ -279,8 +268,8 @@ margin-bottom: 35px;
     height: auto;
     border-radius: 20px;
     padding: 45px 40px;
-
 }
+
 #resultathebergement{
     display: flex;
     flex-wrap:wrap;
@@ -288,6 +277,7 @@ margin-bottom: 35px;
     justify-content: space-between;
     margin-top: 25px;
 }
+
 .hebergement{
     display: flex;
     flex-direction: column;
@@ -301,7 +291,6 @@ margin-bottom: 35px;
     border: 5px solid white;
     margin: 0 0 40px 0;
     padding-bottom: 3px;
-
 }
 
 .lienherbergement{
@@ -340,7 +329,6 @@ margin-bottom: 35px;
     text-decoration: none;
 }
 
-
 /*III. Section 3*/
 #section3{
     display: grid;
@@ -373,8 +361,7 @@ margin-bottom: 35px;
     flex-direction: column;
     width: auto;
     margin-top: 25px;
-    
- }
+}
 
 .populaires{
     background-color: white;
@@ -384,7 +371,6 @@ margin-bottom: 35px;
     margin-bottom: 40px;
     border-radius: 20px;
     border: 5px solid white;
-    /*max-height: 200px;*/
     min-width: 200px;
     max-width: 400px;
     color: black;
@@ -399,6 +385,7 @@ margin-bottom: 35px;
     border: 3px solid blues;
     width: auto;
 }
+
 .populaires img{ 
     height: 130px;
     width: 130px;
@@ -409,7 +396,6 @@ margin-bottom: 35px;
 .populaires p{
     margin: 10px 10px 40px;
 }
-
 
 .hotel{
     padding: 5px 20px 0px 10px;
@@ -427,25 +413,23 @@ margin-bottom: 35px;
     
 #conteneursection4{
     padding-bottom: 60px;
-
 }
+
 .galleryactivites{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 50px);
-    max-width: 1440px;
+    grid-template-rows: repeat(6, 45px);
+    max-width: 1440px;/*voir si utile*/
     gap: 40px 0px;
     margin-top: 25px;
-    /*voir pour mettre max-*height*/
-    /*height: auto;*/
 }
 
 .activités{
     width: auto;
     height: auto;
     border-radius: 20px;
-    max-width: 320px;
-    }
+    max-width: 320px;/*voir si utile*/
+}
 
 .lienactivités{
     display: flex;
@@ -489,8 +473,6 @@ margin-bottom: 35px;
     grid-row-start: 4;
     grid-row-end: 7;
 }
-
-
 
 figcaption{
     display: flex;
@@ -544,7 +526,7 @@ footer{
 
 /*Breakpooint smartphone*/
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 414px){
 
  
     .containergrid{
@@ -553,7 +535,6 @@ footer{
         grid-template-rows: repeat(5, auto);
         max-width: 370px;
         width: auto;
-        border: 2px solid blue;
         margin: 0;
         /*gap: 10px 10px;
         pb marge grille
@@ -567,7 +548,6 @@ footer{
     }
 
     article{
-    border: 2px solid greenyellow;
 }
 
 /*HEADER*/
@@ -579,13 +559,11 @@ footer{
         width: 370px;
         height: auto;
         align-items: inherit;
-        border: 3px solid orange;
     }
 
     header{
         grid-column-start: 1;
         grid-row-start: 1;
-        border: 2px solid palevioletreds;
     }
 
     #inscrire{
@@ -601,7 +579,6 @@ footer{
     nav ul{
         width: auto;
         padding: 0px;
-        border: 2px solid chartreuse;
     }
 
     nav ul li:hover{
@@ -624,11 +601,11 @@ footer{
     #section1{
         grid-column-start: 1;
         grid-row-start: 2;
-        border: 2px solid purple;
     }
         
     #conteneursection1{
         width: auto;
+        height: auto;
         }
         
     #filtres{
@@ -640,13 +617,13 @@ footer{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        border: 3px solid purple;
     }
-
 
     .optionfiltres{
         width: auto;
-        padding-right: 20px;
+        padding-right: 0;
+        font-size: 16px;
+        /*margin: 0px;*/
     }
 
     .optionfiltres p{
@@ -671,7 +648,6 @@ footer{
         width: auto;
         grid-column-start: 1;
         grid-row-start: 4;
-        border: 2px solid purple;
     }
 
     #conteneursection2{
@@ -688,11 +664,11 @@ footer{
     #section3{
         grid-column-start: 1;
         grid-row-start: 3;
-        border: 2px solid purple;
     }
 
     #conteneursection3{
         width: fit-content;
+        border-radius: 0;
     }
 
     #resultatpopulaires{
@@ -708,8 +684,7 @@ footer{
 
     #section4{
         grid-column-start: 1;
-        grid-row-start: 5;
-        border: 2px solid purple;   
+        grid-row-start: 5; 
     }
 
     #conteneursection4{
