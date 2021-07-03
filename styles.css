@@ -6,6 +6,7 @@ body{
 }
 
 .containergrid{
+/*pb marge*/
     display: grid;
     grid-template-columns: 65% 1fr;
     grid-template-rows: repeat(4 auto);
@@ -194,9 +195,9 @@ margin-bottom: 35px;
 /*Bouton filtres*/
 .optionfiltres{
     display: flex;
-    margin: 0px 12px;
+    margin: 0px 1em;
     width: auto;
-    height: 50px;
+    height: 2.5em;
     border: 2px solid #F2F2F2;
     border-radius: 30px;
     font-size: 20px;
@@ -213,11 +214,12 @@ margin-bottom: 35px;
     display: flex;
     border-radius: 50%;
     background-color: #DEEBFF;
-    padding: 0px 8px;
-    width: 35px;
+    width: 2.5em;
     justify-content: center;
     align-items: center;
     color: #0065FC;
+    position: relative;
+    left: -1px;
 }
 
 .optionfiltres p{
@@ -371,8 +373,8 @@ margin-bottom: 35px;
     margin-bottom: 40px;
     border-radius: 20px;
     border: 5px solid white;
-    min-width: 200px;
-    max-width: 400px;
+    width: 330px;
+    height: 130px;
     color: black;
 }
 
@@ -428,7 +430,7 @@ margin-bottom: 35px;
     width: auto;
     height: auto;
     border-radius: 20px;
-    max-width: 320px;/*voir si utile*/
+    max-width: 330px;/*voir si utile*/
 }
 
 .lienactivités{
@@ -479,7 +481,6 @@ figcaption{
     align-items: center;
     font-size: 18px;
     padding: 0px 20px;
-    width: auto;
     height: 70px;
 }
 
@@ -523,7 +524,16 @@ footer{
 }
 
 /*Break point tablette*/
+/*@media screen and (max-width: 900px){
+    .activités{
+        max-width: 150px;
+        width: auto;
+    }
 
+    .galleryactivites{
+        max-width: 700px;
+    }
+}*/
 /*Breakpooint smartphone*/
 
 @media screen and (max-width: 414px){
@@ -547,8 +557,8 @@ footer{
         width: 370px;
     }
 
-    article{
-}
+    /*article{
+}*/
 
 /*HEADER*/
 
@@ -611,19 +621,23 @@ footer{
     #filtres{
         display: flex;
         flex-direction: column;
+        height: auto;
+        align-items: flex-start;
     }
 
     .containerfiltres{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 0;
     }
 
     .optionfiltres{
         width: auto;
         padding-right: 0;
         font-size: 16px;
-        /*margin: 0px;*/
+        margin: 3px;
     }
 
     .optionfiltres p{
@@ -636,6 +650,7 @@ footer{
 
     .loupe{
         display: flex;
+        align-items: center;
     }
 
     .recherche{
@@ -655,8 +670,13 @@ footer{
     }
 
     .hebergement img{
-        width: 300px;
+        width: 320px;
         height: 100px;
+    }
+
+    .hebergement{
+        height: auto;
+        width: auto;
     }
 
     /*III. SECTION 3*/
@@ -700,9 +720,18 @@ footer{
         align-content: center;
     }
 
+    .activités{
+      width: 330px;  
+      height: auto;
+    }
+
     .activités img{
         height: 100px;
-        width: 300px;
+        width: 330px;
+    }
+
+    figcaption{
+        width: auto;
     }
 
 
