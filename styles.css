@@ -8,20 +8,20 @@ body{
 .containergrid{
 /*pb marge*/
     display: grid;
-    grid-template-columns: 65% 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: repeat(4 auto);
     max-width: 1440px;
-    margin: auto;
+    margin: 0px 40px;
     width: auto;
-    gap: 40px;
+    /*gap: 40px;*/
 }
 
 /*Header*/
 header{
-    display: grid;
     grid-row-start: 1;
     grid-column-start: 1;
-    grid-column: span 2;
+    grid-column-end: 3
+;
 }
 
 #containerheader{
@@ -41,7 +41,6 @@ header img{
 nav{
     display: flex;
     justify-content: space-between;
-    max-width: 40%;
     min-width: 60px;
 }
 nav ul{
@@ -53,10 +52,11 @@ nav ul{
 
 nav ul li{
     display: flex;
-    width: auto;
+    width: 100px;
     height: 4em;
-    padding: 0 40px;
+    padding-left: 50px;
     align-items: flex-end;
+    justify-content: flex-end;
 }
 
 nav ul li:hover {
