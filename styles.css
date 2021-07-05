@@ -94,7 +94,11 @@ article{
     box-shadow: 0px 3px 10px rgb(214, 214, 214)
 }
 
-#nom{
+figure{
+    box-shadow: 0px 3px 10px rgb(214, 214, 214)
+}
+
+.nom{
     margin: 6px 0px;
 }
 
@@ -323,7 +327,7 @@ margin-bottom: 35px;
     font-size: 12px;
 }
 
-#grey{
+.grey{
     color: #F2F2F2;
 }
 
@@ -428,50 +432,45 @@ margin-bottom: 35px;
 }
 
 .activités{
-    width: auto;
-    height: auto;
-    border-radius: 20px;
-    max-width: 330px;/*voir si utile*/
-}
-
-.lienactivités{
     display: flex;
     flex-direction: column;
     text-decoration: none;
     color: black;
     width: auto;
     height: 100%;
+    margin: 0;
+    border-radius: 20px;
 }
 
-.activités:nth-child(1){
+.lienactivités:nth-child(1){
     grid-column-start: 1;
     grid-row-start: 1;
     grid-row: span 6;
 }
 
-.activités:nth-child(2){
+.lienactivités:nth-child(2){
     grid-column-start: 2;
     grid-row: span 4;
 }
 
-.activités:nth-child(3){
+.lienactivités:nth-child(3){
     grid-column-start: 2;
     grid-row: span 2;
 }
 
-.activités:nth-child(4){
+.lienactivités:nth-child(4){
     grid-column-start: 3;
     grid-row-start: 1;
     grid-row-end: 7;
 }
 
-.activités:nth-child(5){
+.lienactivités:nth-child(5){
     grid-column-start: 4;
     grid-row-start: 1;
     grid-row-end: 4;
 }
 
-.activités:nth-child(6){
+.lienactivités:nth-child(6){
     grid-column-start: 4;
     grid-row-start: 4;
     grid-row-end: 7;
