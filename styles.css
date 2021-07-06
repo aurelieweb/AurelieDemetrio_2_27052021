@@ -524,6 +524,70 @@ footer{
     padding-bottom: 0.7em;
 }
 
+/*Breakpoint point*/
+
+@media screen and (max-width: 780px){
+    
+.containergrid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 780px;
+}
+
+  .optionfiltres{
+      font-size: 14px;
+      margin: 0 10px;
+  }  
+
+  .optionfiltres p{
+      padding: 0px 10px 0 5px;
+  }
+
+    #section2{
+        margin-right: 0;
+    }
+
+    #conteneursection2{
+        margin-right: 0;
+    }
+
+
+    #section3{
+        margin-left: 0;
+    }
+    #conteneursection3{
+    }
+
+    #resultatpopulaires{
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .populaires{
+        flex-direction: column;
+        width: 290px;
+    }
+
+    .hotel{
+        padding: 5px;
+    }
+
+    .hotel p{
+        font-size: 13px;
+    }
+
+    .galleryactivites{
+        max-width: 780px;/*voir si utile*/
+        gap: 20px 20px;
+        margin-top: 25px;}
+
+    figcaption{
+        font-size: 14px;
+    }
+}
+
 /*Breakpooint smartphone*/
 
 @media screen and (max-width: 414px){
