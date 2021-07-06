@@ -201,7 +201,7 @@ margin-bottom: 35px;
     margin: 0px 1em;
     width: auto;
     height: 2.5em;
-    border: 2px solid #F2F2F2;
+    border: 3px solid #F2F2F2;
     border-radius: 30px;
     font-size: 20px;
 }
@@ -492,6 +492,30 @@ figcaption{
     height: 100%;
     border-radius: 15px 15px 0px 0px;
     object-fit: cover;
+}
+
+.lienactivités:nth-child(1) img{
+    object-position: 45% 0 ;
+}
+
+.lienactivités:nth-child(2) img{
+    object-position: 0 30%;
+}
+
+.lienactivités:nth-child(3) img{
+    object-position: 0 30%;
+}
+
+.lienactivités:nth-child(4) img{
+    object-position: 55% 90%;
+}
+
+.lienactivités:nth-child(5) img{
+    object-position: 40% 0;
+}
+
+.lienactivités:nth-child(6) img{
+    object-position: 40% 10%;
 }
 
 /*Footer*/
