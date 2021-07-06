@@ -102,7 +102,7 @@ figure{
     margin: 6px 0px;
 }
 
-/*Section 1*/
+/*I.Section 1*/
 
 #section1{
     display: grid;
@@ -524,15 +524,15 @@ footer{
     padding-bottom: 0.7em;
 }
 
-/*Breakpoint point*/
+/*Breakpoint point tablette*/
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 1024px){
     
 .containergrid{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 780px;
+    width: auto;
 }
 
   .optionfiltres{
@@ -556,8 +556,6 @@ footer{
     #section3{
         margin-left: 0;
     }
-    #conteneursection3{
-    }
 
     #resultatpopulaires{
         flex-direction: row;
@@ -579,7 +577,7 @@ footer{
     }
 
     .galleryactivites{
-        max-width: 780px;/*voir si utile*/
+        width: auto;/*voir si utile*/
         gap: 20px 20px;
         margin-top: 25px;}
 
@@ -590,13 +588,13 @@ footer{
 
 /*Breakpooint smartphone*/
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 480px){
  
     .containergrid{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, auto);
-        max-width: 370px;
+        /*max-width: 370px;*/
         width: auto;
         margin: 0;
     }
@@ -738,13 +736,13 @@ footer{
     /*III. SECTION 3*/
 
     #section3{
+        width: auto;
         grid-column-start: 1;
         grid-row-start: 3;
         margin: 20px 0 20px 0;
     }
 
     #conteneursection3{
-        width: fit-content;
         border-radius: 0;
         padding: 30px 0  30px 0;
     }
@@ -755,6 +753,7 @@ footer{
 
     .populaires{
         margin-bottom: 10px;
+        width: 330px;
     }
 
     .hotel{
@@ -766,6 +765,7 @@ footer{
     #section4{
         grid-column-start: 1;
         grid-row-start: 5; 
+        width: auto;
     }
 
     #conteneursection4{
