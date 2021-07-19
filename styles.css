@@ -276,8 +276,7 @@ margin-bottom: 35px;
 #section2{
     grid-row-start: 3;
     grid-column-start: 1;
-    /*margin: 20px 20px 20px 0;*/
-    margin: auto;
+    margin: 20px 20px 20px 0;
 }
 
 #conteneursection2{
@@ -376,6 +375,7 @@ margin-bottom: 35px;
     display: flex;
     flex-direction: column;
     width: auto;
+    margin: auto;
 }
 
 .populaires{
@@ -460,7 +460,7 @@ margin-bottom: 35px;
 
 .lienactivités:nth-child(2){
     grid-column-start: 2;
-    grid-row: span 4;
+    grid-row-end: span 4;
 }
 
 .lienactivités:nth-child(3){
@@ -555,10 +555,17 @@ footer{
 @media screen and (max-width: 1024px){
     
 .containergrid{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
     flex-direction: column;
     justify-content: center;
     width: auto;
+}
+
+header{
+    grid-column-start: 1;
+    grid-row-start: 1;
 }
 
   .optionfiltres{
@@ -570,7 +577,13 @@ footer{
       padding: 0px 10px 0 5px;
   }
 
+    #section1{
+      grid-column-start: 1;
+      grid-row-start: 2;
+    }
     #section2{
+        grid-column-start: 1;
+        grid-row-start: 4;
         margin-right: 0;
     }
 
@@ -578,8 +591,9 @@ footer{
         margin-right: 0;
     }
 
-
     #section3{
+        grid-column-start: 1;
+        grid-row-start: 3;
         margin-left: 0;
     }
 
@@ -602,6 +616,11 @@ footer{
         font-size: 13px;
     }
 
+    #section4{
+    grid-column-start: 1;
+    grid-row-start: 5;
+    } 
+
     .galleryactivites{
         width: auto;/*voir si utile*/
         gap: 20px 20px;
@@ -617,10 +636,6 @@ footer{
 @media screen and (max-width: 480px){
  
     .containergrid{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, auto);
-        /*max-width: 370px;*/
         width: auto;
         margin: 0;
     }
@@ -636,11 +651,6 @@ footer{
         width: 370px;
         height: auto;
         align-items: inherit;
-    }
-
-    header{
-        grid-column-start: 1;
-        grid-row-start: 1;
     }
 
     #inscrire{
@@ -674,10 +684,6 @@ footer{
     }
 
 /* I. SECTION 1*/
-    #section1{
-        grid-column-start: 1;
-        grid-row-start: 2;
-    }
         
     #conteneursection1{
         width: auto;
@@ -724,14 +730,12 @@ footer{
 
     #section2{
         width: auto;
-        grid-column-start: 1;
-        grid-row-start: 4;
         margin: 20px 0 20px 0;
     }
 
     #conteneursection2{
         width: 100%;
-        padding: 30px 0  30px 0;
+        padding: 30px 0 30px 0;
         border-radius: 0;
         background: none;
     }
@@ -742,6 +746,7 @@ footer{
 
     #resultathebergement{
         margin-top: 0;
+        justify-content: center;
     }
     
     .hebergement{
@@ -763,8 +768,6 @@ footer{
 
     #section3{
         width: auto;
-        grid-column-start: 1;
-        grid-row-start: 3;
         margin: 20px 0 20px 0;
     }
 
@@ -789,8 +792,6 @@ footer{
     /*IV. SECTION 4*/
 
     #section4{
-        grid-column-start: 1;
-        grid-row-start: 5; 
         width: auto;
     }
 
@@ -830,7 +831,7 @@ footer{
 
 /*FOOTER*/
 
-    #conteneurfooter{
+    .conteneurfooter{
         display: flex;
         flex-direction: column;
         background-color: #F2F2F2;
