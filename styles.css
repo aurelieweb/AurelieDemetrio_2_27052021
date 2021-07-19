@@ -432,7 +432,7 @@ margin-bottom: 35px;
 .galleryactivites{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 45px);
+    grid-template-rows: repeat(8, 20px);
     max-width: 1440px;/*voir si utile*/
     gap: 40px 40px;
     margin-top: 25px;
@@ -453,42 +453,37 @@ margin-bottom: 35px;
 }
 
 .lienactivités:nth-child(1){
-    grid-column-start: 1;
-    grid-row-start: 1;
-    grid-row: span 6;
+    grid-area: 1 / 1 / 9 / 2;
 }
 
 .lienactivités:nth-child(2){
-    grid-column-start: 2;
-    grid-row-end: span 4;
+    grid-area: 1 / 2 / 6 / 3;
 }
 
 .lienactivités:nth-child(3){
-    grid-column-start: 2;
-    grid-row: span 2;
+    grid-area: 6 / 2 / 9 / 3;
 }
 
 .lienactivités:nth-child(4){
-    grid-column-start: 3;
-    grid-row-start: 1;
-    grid-row-end: 7;
+    grid-area: 1 / 3 / 9 / 4;
 }
 
 .lienactivités:nth-child(5){
-    grid-column-start: 4;
-    grid-row-start: 1;
-    grid-row-end: 4;
+    grid-area: 1 / 4 / 5 / 5;
 }
 
 .lienactivités:nth-child(6){
-    grid-column-start: 4;
-    grid-row-start: 4;
-    grid-row-end: 7;
+    grid-area: 5 / 4 / 9 / 5;
+}
+
+.activités h3{
+    margin: 0;
+    line-height: 40px;
 }
 
 .galleryactivites img{
     width: 100%;
-    height: 100%;
+    height: calc(100% - 40px);
     border-radius: 15px 15px 0px 0px;
     object-fit: cover;
 }
