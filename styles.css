@@ -19,7 +19,6 @@ header{
     grid-row-start: 1;
     grid-column-start: 1;
     grid-column: span 2;
-  
 }
 
 #containerheader{
@@ -93,8 +92,6 @@ h2{
     font-size: 24px;
     margin: 0px;
     margin-bottom: 30px;
-    /*h2font-size: 18px;
-    justify-content: flex-start;*/
 }
 
 h3{
@@ -181,7 +178,6 @@ margin-bottom: 35px;
     font-size: 18px;
 }
 
-/*Voir si quelque chose de plus propre*/
 .loupe{
     display: none;
     border: 0;
@@ -195,6 +191,7 @@ margin-bottom: 35px;
     position: relative;
     right: 4px;
 }
+
 /*Conteneur Filtres options*/
 #filtres{
    display: flex; 
@@ -408,7 +405,9 @@ margin-bottom: 35px;
 }
 
 .populaires p{
-    margin: 10px 10px 35px;
+    /*margin: 10px 10px 35px;*/
+    margin: 10px 10px 2em;
+    
 }
 
 .hotel{
@@ -530,7 +529,6 @@ footer{
 
 .elementfooter{
     width: 31%;
-    /*margin: 30px 0px 30px 50px;*/
 }
 
 .elementfooter ul{
@@ -594,13 +592,13 @@ header{
 
     #resultatpopulaires{
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
     }
 
     .populaires{
         flex-direction: column;
-        width: 290px;
+        width: 32%;
     }
 
     .hotel{
@@ -608,7 +606,7 @@ header{
     }
 
     .hotel p{
-        font-size: 13px;
+        font-size: 11px;
     }
 
     #section4{
