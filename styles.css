@@ -92,7 +92,7 @@ h1{
 h2{
     font-size: 24px;
     margin: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 h3{
@@ -102,11 +102,12 @@ h3{
 
 h4{
     font-size: 20px;
+    margin-bottom: 20px;
 
 }
 
 article{
-    box-shadow: 0px 3px 10px rgb(214, 214, 214)
+    box-shadow: 0px 5px 10px rgb(214, 214, 214)
 }
 
 figure{
@@ -278,7 +279,7 @@ margin-bottom: 35px;
 #section2{
     grid-row-start: 3;
     grid-column-start: 1;
-    margin: 20px 20px 20px 0;
+    margin: 0 20px 20px 0;
 }
 
 #conteneursection2{
@@ -351,7 +352,7 @@ margin-bottom: 35px;
     display: grid;
     grid-row-start: 3;
     grid-column-start: 2;
-    margin: 20px 0 20px 20px;  
+    margin: 0 0 20px 20px;  
 }
 
 #conteneursection3{
@@ -483,6 +484,7 @@ margin-bottom: 35px;
 .activités h3{
     margin: 0;
     line-height: 40px;
+    padding-left: 15px;
 }
 
 .galleryactivites img{
@@ -529,7 +531,7 @@ footer{
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    padding: 50px 0 0 30px;
+    padding: 20px 0 10px 50px;
 }
 
 .elementfooter{
@@ -538,14 +540,13 @@ footer{
 
 .elementfooter ul{
     padding-left: 0px;
-    margin-top: 25px;
 }
 
 .elementfooter li{
     list-style-type: none;
     width: auto;
     margin-left: 0px;
-    padding-bottom: 0.7em;
+    padding-bottom: 0.6em;
 }
 
 /*Breakpoint point tablette*/
