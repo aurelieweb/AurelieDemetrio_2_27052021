@@ -330,6 +330,7 @@ margin-bottom: 35px;
 
 .star{
     padding-left: 10px;
+    margin: auto;
 }
 
 .fa-star{
@@ -404,6 +405,10 @@ margin-bottom: 35px;
     width: auto;
 }
 
+.populaires h3{
+    margin: 0;
+}
+
 .populaires img{ 
     height: 130px;
     width: 130px;
@@ -412,8 +417,8 @@ margin-bottom: 35px;
 }
 
 .populaires p{
-    /*margin: 10px 10px 35px;*/
-    margin: 10px 10px 2em;
+    padding-left: 10px;
+    margin: 0;
     
 }
 
