@@ -308,7 +308,6 @@ margin-bottom: 35px;
     border-radius: 20px;
     border: 5px solid white;
     margin: 0 0 40px 0;
-    padding-bottom: 3px;
 }
 
 .lienherbergement{
@@ -330,7 +329,7 @@ margin-bottom: 35px;
 
 .star{
     padding-left: 10px;
-    margin: auto;
+    margin-top: auto;
 }
 
 .fa-star{
@@ -424,7 +423,14 @@ margin-bottom: 35px;
 
 .hotel{
     padding: 5px 20px 0px 10px;
+    display: flex;
+    flex-direction: column;
 }
+
+/*.populaires .star{
+    padding-left: 10px;
+    margin: auto;
+}*/
 
 /*IV. Section 4*/
 
