@@ -226,6 +226,7 @@ margin-bottom: 35px;
 
 .optionfiltres:hover{
     background-color: #0065FC;
+    border: 3px solid #0065FC;
     color: white;
 }
 
@@ -233,13 +234,15 @@ margin-bottom: 35px;
     display: flex;
     border-radius: 50%;
     background-color: #DEEBFF;
-    width: 2.5em;
+    width: 2.8em;
+    height: 2.8em;
     justify-content: center;
     align-items: center;
     color: #0065FC;
     position: relative;
-    left: -1px;
-    min-width: 2.5em;
+    left: -3px;
+    top: -3px;
+    /*min-width: 2.5em;*/
 }
 
 .optionfiltres p{
