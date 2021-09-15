@@ -661,6 +661,10 @@ header img{
 /*Breakpooint smartphone*/
 
 @media screen and (max-width: 480px){
+
+    body{
+        font-size: 14px;
+    }
  
     .containergrid{
         width: auto;
@@ -674,6 +678,10 @@ header img{
         height: auto;
         align-items: inherit;
     }
+
+    h1{
+        padding-right: 40px;
+   }
 
     h2{
         padding-left: 20px;
@@ -708,7 +716,11 @@ header img{
     }
 
 /* I. SECTION 1*/
-        
+    
+    #section1{
+        margin: 0;
+    }
+
     #conteneursection1{
         width: auto;
         height: auto;
@@ -751,6 +763,15 @@ header img{
 
     .recherche{
         display: none;
+    }
+
+    #p1{
+        margin-top: 10px;
+        /*font-size: 14px;*/
+    }
+
+    #info{
+        font-size: 14px;
     }
 
     /*II. SECTION 2*/
@@ -798,20 +819,39 @@ header img{
 
     #conteneursection3{
         border-radius: 0;
-        padding: 30px 0  30px 0;
+        padding: 30px 0 30px 0;
     }
 
     #resultatpopulaires{
+        flex-direction: column;
+        justify-content: space-between;
+        width: auto;
         margin: auto;
     }
 
     .populaires{
-        margin-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
         width: 330px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .pop{
+        flex-direction: row;}
+
+    .populaires img{
+        height: 120px;
+        width: 120px;
+        border-radius: 15px 0px 0px 15px;
     }
 
     .hotel{
         padding-left: 15px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
     }
 
     /*IV. SECTION 4*/
