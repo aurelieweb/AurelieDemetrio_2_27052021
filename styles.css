@@ -100,7 +100,6 @@ h3{
 h4{
     font-size: 20px;
     margin-bottom: 20px;
-
 }
 
 article{
@@ -208,7 +207,6 @@ margin-bottom: 25px;
     font-weight: bolder;
     border-radius: 15px;
     width: 3.5em;
-
 }
 
 /*Conteneur Filtres options*/
@@ -420,7 +418,6 @@ margin-bottom: 25px;
     font-size: 13px;
     padding-left: 10px;
     margin: 0;
-    
 }
 
 .hotel{
@@ -673,7 +670,6 @@ header img{
     }
 
 /*HEADER*/
-
     #containerheader{
         flex-direction: column;
         height: auto;
