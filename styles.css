@@ -93,7 +93,7 @@ h2{
 }
 
 h3{
-    font-size: 14px;
+    font-size: 16px;
     padding-left: 10px;
 }
 
@@ -495,7 +495,7 @@ margin-bottom: 25px;
 
 .activités h3{
     margin: 0;
-    line-height: 40px;
+    line-height: 50px;
     padding-left: 15px;
 }
 
@@ -507,11 +507,11 @@ margin-bottom: 25px;
 }
 
 .lienactivités:nth-child(1) img{
-    object-position: 45% 0 ;
+    object-position: 45% 10% ;
 }
 
 .lienactivités:nth-child(2) img{
-    object-position: 0 30%;
+    object-position: 0 45%;
 }
 
 .lienactivités:nth-child(3) img{
@@ -519,7 +519,7 @@ margin-bottom: 25px;
 }
 
 .lienactivités:nth-child(4) img{
-    object-position: 55% 90%;
+    object-position: 55% 20%;
 }
 
 .lienactivités:nth-child(5) img{
@@ -527,7 +527,7 @@ margin-bottom: 25px;
 }
 
 .lienactivités:nth-child(6) img{
-    object-position: 40% 10%;
+    object-position: 40% 25%;
 }
 
 /*Footer*/
@@ -685,7 +685,7 @@ header img{
 
     h2{
         padding-left: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
 
     #inscrire{
@@ -718,7 +718,7 @@ header img{
 /* I. SECTION 1*/
     
     #section1{
-        margin: 0;
+        margin: 0 0 40px 0;
     }
 
     #conteneursection1{
@@ -777,12 +777,12 @@ header img{
     /*II. SECTION 2*/
 
     #section2{
-        margin: 20px 0 20px 0;
+        margin: 0;
     }
 
     #conteneursection2{
         width: 100%;
-        padding: 30px 0 30px 0;
+        padding: 30px 0 20px 0;
         border-radius: 0;
         background: none;
     }
@@ -814,12 +814,12 @@ header img{
     /*III. SECTION 3*/
 
     #section3{
-        margin: 20px 0 20px 0;
+        margin: 0;
     }
 
     #conteneursection3{
         border-radius: 0;
-        padding: 30px 0 30px 0;
+        padding: 30px 10px 0;
     }
 
     #resultatpopulaires{
@@ -835,7 +835,7 @@ header img{
         flex-direction: column;
         width: 330px;
         height: auto;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 
     .pop{
@@ -852,6 +852,14 @@ header img{
         display: flex;
         flex-direction: column;
         height: auto;
+    }
+
+    .hotel p{
+        font-size: 14px;
+    }
+
+    .fa-chart-line{
+        padding-right: 10px;
     }
 
     /*IV. SECTION 4*/
@@ -896,16 +904,20 @@ header img{
         display: flex;
         flex-direction: column;
         background-color: #F2F2F2;
-        padding: 30px 0;
+        padding: 15px 0;
     }
 
     .elementfooter{
         width: auto;
-        margin: 0px 0px 30px 30px;
+        margin: 0px 0px 10px 30px;
     }
 
     .elementfooter ul{
         margin: 20px 0 0 0;
+    }
+
+    .elementfooter li{
+        padding-bottom: 10px;
     }
 }
 
