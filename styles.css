@@ -2,7 +2,7 @@ body{
     margin: 0;
     color: black;
     font-family: Raleway;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .containergrid{
@@ -123,6 +123,7 @@ figure{
 .fa-star{
     color: #0065FC;
     font-size: 10px;
+    padding-bottom: 5px;
 }
 
 .grey{
@@ -230,7 +231,7 @@ margin-bottom: 25px;
     display: flex;
     margin: 0px 0.6em;
     width: auto;
-    height: 2.3em;
+    height: 45px;
     border: 3px solid #F2F2F2;
     border-radius: 30px;
 }
@@ -245,8 +246,8 @@ margin-bottom: 25px;
     display: flex;
     border-radius: 50%;
     background-color: #DEEBFF;
-    width: 2.55em;
-    height: 2.55em;
+    width: 50px;
+    height: 50px;
     justify-content: center;
     align-items: center;
     color: #0065FC;
@@ -273,8 +274,12 @@ margin-bottom: 25px;
 }
 
 #bordureinfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5em;
+    width: 1.5em;
     border: 2px solid #F2F2F2;
-    padding: 0.5em 0.7em 0.5em 0.7em;
     margin-right: 10px;
     border-radius: 50%;
 }
@@ -338,12 +343,14 @@ margin-bottom: 25px;
 .hebergement p{
     padding-left: 10px;
     margin: 5px 0px;
+    font-size: 13px;
 }
 
 #afficherplus{
     color: black;
     font-weight: bolder;
     text-decoration: none;
+    margin-bottom: 10px;
 }
 
 /*III. Section 3*/
@@ -402,9 +409,9 @@ margin-bottom: 25px;
     width: auto;
 }
 
-.populaires h3{
+/*.populaires h3{
     margin: 0;
-}
+}*/
 
 .populaires img{ 
     height: 120px;
@@ -414,6 +421,7 @@ margin-bottom: 25px;
 }
 
 .populaires p{
+    font-size: 13px;
     padding-left: 10px;
     margin: 0;
     
@@ -525,7 +533,7 @@ margin-bottom: 25px;
 /*Footer*/
 footer{
     font-family: Raleway;
-    font-size: 16px;
+    font-size: 14px;
     max-width: 1440px;;
     margin: auto;
     background-color: #F2F2F2;
@@ -535,11 +543,11 @@ footer{
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    padding: 20px 0 10px 50px;
+    padding: 10px 0 10px 50px;
 }
 
 .elementfooter{
-    width: 31%;
+    width: 33%;
 }
 
 .elementfooter ul{
