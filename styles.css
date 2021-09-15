@@ -409,10 +409,6 @@ margin-bottom: 25px;
     width: auto;
 }
 
-/*.populaires h3{
-    margin: 0;
-}*/
-
 .populaires img{ 
     height: 120px;
     width: 120px;
@@ -495,8 +491,7 @@ margin-bottom: 25px;
 
 .activités h3{
     margin: 0;
-    padding: 5px 0 0 15px;
-    height: 50px;
+    line-height: 50px;
 }
 
 .galleryactivites img{
@@ -656,6 +651,12 @@ header img{
     figcaption{
         font-size: 14px;
     }
+
+    .activités h3{
+        margin: 0;
+        padding: 5px 0 0 15px;
+        height: 50px;
+    }
 }
 
 /*Breakpooint smartphone*/
@@ -697,7 +698,7 @@ header img{
 
     nav ul{
         padding: 0px;
-        margin: 5 0px 0px 0px;
+        margin: 5px 0px 0px 0px;
     }
 
     nav ul li:hover{
@@ -767,7 +768,6 @@ header img{
 
     #p1{
         margin-top: 10px;
-        /*font-size: 14px;*/
     }
 
     #info{
@@ -871,10 +871,6 @@ header img{
         padding-bottom: 50px;
     }
 
-    #conteneursection4{
-        /*margin: 0px 0px 30px 15px;*/
-    }
-
     .galleryactivites{
         display: flex;
         flex-direction: column;
@@ -896,6 +892,12 @@ header img{
     figcaption{
         width: auto;
         height: 60px;
+    }
+
+    .activités h3{
+        margin: 0;
+        line-height: 50px;
+        padding: 0 0 0 15px;
     }
 
 /*FOOTER*/
